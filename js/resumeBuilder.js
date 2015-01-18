@@ -463,8 +463,23 @@ d3.select("#header .scifi").transition()
     .delay(2000)
     .style("color", "#A6E0F2");
 
+
 d3.select(".biopic").transition()
-    .duration(400)
-    .delay(4000)
+    .duration(1000)
+    .delay(3600)
     .ease("linear")
-    .style("opacity", "1");
+    .style("opacity", ".6");
+
+d3.select(".biopicCover").transition()
+    .duration(1000)
+    .delay(3600)
+    .ease("linear")
+    .style("opacity", ".8");
+
+
+
+d3.select("hr").transition()
+    .duration(200)
+    .delay(2000)
+    .ease("linear")
+    .style("width", "100%");

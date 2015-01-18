@@ -148,10 +148,26 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
-  width: 200px;
+  z-index: 1;
+  position:relative;
+  padding: 0px;
+  width: 190px;
+  margin-right: 10px;
   display: none;
-  opacity: 0.1;
+  opacity: 0;
+}
+
+.biopicCover{
+  float: left;
+  z-index: 2;
+  position:relative;
+  width: 190px;
+  height: 190px;
+  margin-left: -200px;
+  -webkit-box-shadow: inset 0px 0px 84px 21px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 84px 21px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 84px 21px rgba(0,0,0,0.75);
+  opacity: 0;
 }
 
 img {
@@ -248,4 +264,8 @@ h1, h2, h3, h4, h5 , .scifi{
   color: #222;
   font-style: normal;
   text-transform: uppercase;
+}
+
+hr{
+  width: 0%;
 }

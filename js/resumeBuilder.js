@@ -299,7 +299,7 @@ var work = {
             "title":"Front End Developer",
             "dates":"February 2009-May 2014",
             "location": "New York, NY",
-            "description":"Microsites for shows like Dexter, The Big C and Weeds. Animated Emmy Campaign for Homeland. Engineering of showtimeanytime.com "
+            "description":"Microsites for Dexter, The Big C and Weeds. Animated Emmy Campaign for Homeland. Engineering of showtimeanytime.com "
         }
 
     ],
@@ -443,5 +443,28 @@ d3.selectAll("#onlineSection a").style("color", function(d, i) {
 
 d3.selectAll("#onlineSection a").style("opacity", "0.8");
 
-d3.select("body").transition()
-    .style("background-color", "black");
+d3.select("#header").transition()
+    .duration(5000)
+    .style("background-color", "#222");
+
+d3.select("h2").transition()
+    .duration(2000)
+    .delay(3000)
+    .style("color", "#222");
+
+d3.selectAll(".grey-text").transition()
+    .duration(500)
+    .delay(function(d, i) { return 2000  +  i *  (100 +  Math.random() * 150); })
+    .style("color", "#eee");
+
+
+d3.select("#header .scifi").transition()
+    .duration(2000)
+    .delay(2000)
+    .style("color", "#A6E0F2");
+
+d3.select(".biopic").transition()
+    .duration(400)
+    .delay(4000)
+    .ease("linear")
+    .style("opacity", "1");

@@ -151,6 +151,7 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+  opacity: 0.1;
 }
 
 img {
@@ -239,6 +240,12 @@ span {
 h1, h2, h3, h4, h5 , .scifi{
   font-family: EurostileLT-BoldExtendedTwo;
   font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.grey-text{
+  color: #222;
   font-style: normal;
   text-transform: uppercase;
 }

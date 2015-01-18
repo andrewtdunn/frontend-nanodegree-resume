@@ -38,6 +38,12 @@ var bio = {
         $("#topContacts").append(formattedGithub);
         $("#topContacts").append(formattedLocation);
 
+        $("#footerContacts").append(formattedTwitter);
+        $("#footerContacts").append(formattedGithub);
+        $("#footerContacts").append(formattedLocation);
+
+
+
         $("#header").append(bioPic);
         $("#header").append(formattedGreeting);
 
@@ -154,12 +160,6 @@ var education = {
             "school": "Lynda.com",
             "dates": "2012",
             "url": "http://www.lynda.com/tutorial/86003-2.html"
-        },
-        {
-            "title" : "Create an Interactive Homepage Marquee with jQuery",
-            "school": "Lynda.com",
-            "dates": "2012",
-            "url": "http://www.lynda.com/course-tutorials/Create-Interactive-Homepage-Marquee-jQuery/87637-2.html"
         },
         {
             "title" : "Create an Interactive Homepage Marquee with jQuery",

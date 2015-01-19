@@ -1,4 +1,4 @@
-var skills = ["javascript","c++","algorithms","graphics","html5","ActionScript","PHP","User Experience","Python","jQuery","CSS3"];
+var skills = ["javascript","c++","algorithms","graphics","html5","ActionScript","PHP","User Experience","Augmented reality","Python","jQuery","CSS3","computer vision" ,"3d Modeling"];
 
 var contacts = {
     "twitter": "@andrewtdunn",
@@ -332,7 +332,7 @@ var projects = {
     "projects":[
          {
             "title":"Showtime Emmy Campaign",
-            "dates":"2010",
+            "dates":"2012",
             "description":"Flash Animation of Showtime Emmy Campaign Ads.",
             "images":[
                 "http://andrewtdunn.com/_images/project_images/shoEmmy2012.jpg"

@@ -53,7 +53,10 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 </head>
 <body unresolved>
   <div id="main">
+<<<<<<< HEAD
 
+=======
+>>>>>>> changes emmy project year
     <!--
     Everything from here to the <script> tag below is the skeleton of your
     website. Your code will add information to each of the sections of the
@@ -115,6 +118,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
 
     if(document.getElementsByClassName('flex-item').length === 0) {
+<<<<<<< HEAD
       //document.getElementById('topContacts').style.display = 'none';
       $("#topContacts").css("background-color", "black");
     }
@@ -141,7 +145,69 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     if(document.getElementById('map') === null) {
       //document.getElementById('mapDiv').style.display = 'none';
       $("#mapDiv").css("backgroundColor", "black");
+=======
+      document.getElementById('topContacts').style.backgroundColor = "black";
     }
+    if(document.getElementsByTagName('h1').length === 0) {
+      //document.getElementById('header').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('letsConnect').style.backgroundColor = "black";
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.backgroundColor = "black";
+    }
+
+    $("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
+    $("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
+
+
+    if (bio.skills.length > 0){
+      console.log("skills present");
+      $("#header").append(HTMLskillsStart);
+      for (skill in bio.skills){
+        console.log(bio.skills[skill]);
+        $("#skills").append(HTMLskills.replace("%data%",bio.skills[skill]));
+      }
+    }
+
+    function displayWork(){
+      for(job in work.jobs){
+        $("#workExperience").append(HTMLworkStart)
+        var employer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+        var title = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+        $(".work-entry:last").append(employer + title);
+        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates)
+        $(".work-entry:last").append(formattedDates);
+        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description)
+        $(".work-entry:last").append(formattedDescription);
+      }
+>>>>>>> changes emmy project year
+    }
+
+    displayWork();
+
+    function logClick(x,y){
+      console.log("xlocation: " + x + "; y location: " + y);
+    }
+
+    $(document).click(function(loc){
+      var x = loc.pageX;
+      var y = loc.pageY;
+
+      logClick(x,y);
+    });
+
+
   </script>
 </body>
 </html>

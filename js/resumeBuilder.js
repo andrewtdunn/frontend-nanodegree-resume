@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var skills = ["javascript","c++","algorithms","graphics","html5","ActionScript","PHP","User Experience","Python","jQuery","CSS3"];
 
 var contacts = {
@@ -60,6 +61,28 @@ var bio = {
         }
     }
 };
+=======
+
+var skills = ["javascript","c++","algorithms"];
+var contacts = [
+    {mobile: "646-285-6089"},
+    {email: "atd2005@gmail.com"},
+    {github: "andrewtdunn"},
+    {twitter: "@andrewtdunn"},
+    {location: "Brooklyn, NY"}
+]
+
+var bio = {
+    name : "Andrew Dunn",
+    role: "Smart Creative",
+    contactInfo: contacts,
+    skills: skills,
+    welcomeMessage: "What's Up?",
+    biopic: "https://avatars1.githubusercontent.com/u/1116701?v=3&s=460"
+};
+
+
+>>>>>>> changes emmy project year
 
 var education = {
 
@@ -68,8 +91,13 @@ var education = {
             "name":"Columbia University",
             "location":"New York City, NY",
             "degree":"Bachelor of Science",
+<<<<<<< HEAD
             "majors":["Computer Science - Vision and Graphics"],
             "dates": "2008-2011",
+=======
+            "majors":["Computer Science"],
+            "dates": 2011,
+>>>>>>> changes emmy project year
             "url": "http://columbia.edu"
         },
         {
@@ -77,7 +105,11 @@ var education = {
             "location":"Brooklyn, NY",
             "degree":"Master of Fine Arts",
             "majors":["Drawing and Painting"],
+<<<<<<< HEAD
             "dates": "2000-2002",
+=======
+            "dates": 2002,
+>>>>>>> changes emmy project year
             "url": "http://pratt.edu"
         },
         {
@@ -85,6 +117,7 @@ var education = {
             "location":"Baton Rouge, LA",
             "degree":"Bachelor of Arts/Bachelor of Fine Arts",
             "majors":["English Literature", "Drawing and Painting"],
+<<<<<<< HEAD
             "dates": "1995-1999",
             "url": "http://lsu.edu"
         },
@@ -95,6 +128,10 @@ var education = {
             "majors":["studies in pre-medicine"],
             "dates": "1993-1994",
             "url": "http://trinity.edu"
+=======
+            "dates": 1999,
+            "url": "http://lsu.edu"
+>>>>>>> changes emmy project year
         }
     ],
 
@@ -104,114 +141,193 @@ var education = {
         {
             "title" : "Front End Developer Nanodegree",
             "school": "Udacity",
+<<<<<<< HEAD
             "dates": "2014",
+=======
+            "dates": 2014,
+>>>>>>> changes emmy project year
             "url": "https://www.udacity.com/course/nd001"
         },
         {
             "title" : "Intro to Computer Science",
             "school": "Udacity",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "https://www.udacity.com/course/cs101"
         },
         {
             "title" : "Up and Running with Linux for PHP Developers",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2014",
+=======
+            "dates": 2014,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/Apache-tutorials/Up-Running-Linux-PHP-Developers/158372-2.html"
         },
         {
             "title" : "Responsive CSS with SASS and Compass",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2014",
+=======
+            "dates": 2014,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/CSS-tutorials/Responsive-CSS-Sass-Compass/140777-2.html"
         },
         {
             "title" : "Coding Faster with Emmet",
             "school": "Udacity",
+<<<<<<< HEAD
             "dates": "2014",
+=======
+            "dates": 2014,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/Emmet-tutorials/Coding-Faster-Emmet/133353-2.html"
         },
         {
             "title" : "CSS with LESS and Sass",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2014",
+=======
+            "dates": 2014,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/tutorial/107921-2.html"
         },
         {
             "title" : "Up and Running with Backbone.js (2013)",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2013",
+=======
+            "dates": 2013,
+>>>>>>> changes emmy project year
             "url": "https://www.lynda.com"
         },
         {
             "title" : "AJAX Essential Training",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2013",
+=======
+            "dates": 2013,
+>>>>>>> changes emmy project year
             "url": "https://www.lynda.com"
         },
         {
             "title" : "Node.js First Look",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/Nodejs-tutorials/Nodejs-First-Look/101554-2.html"
         },
          {
             "title" : "CSS Page Layouts",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/tutorial/86003-2.html"
         },
         {
             "title" : "Create an Interactive Homepage Marquee with jQuery",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+            "url": "http://www.lynda.com/course-tutorials/Create-Interactive-Homepage-Marquee-jQuery/87637-2.html"
+        },
+        {
+            "title" : "Create an Interactive Homepage Marquee with jQuery",
+            "school": "Lynda.com",
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/course-tutorials/Create-Interactive-Homepage-Marquee-jQuery/87637-2.html"
         },
         {
             "title" : "JavaScript Essential Training",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/JavaScript-tutorials/JavaScript-Essential-Training/81266-2.html"
         },
         {
             "title" : "PHP with MySQL Beyond the Basics",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/PHP-tutorials/php-with-OOP-beyond-the-basics/653-2.html"
         },
         {
             "title" : "CSS3 First Look ",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com"
         },
         {
             "title" : "jQuery Essential Training",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/jQuery-tutorials/jQuery-Essential-Training/48370-2.html"
         },
         {
             "title" : "HTML5 First Look",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/HTML-5-tutorials/html5-first-look/67161-2.html"
         },
         {
             "title" : "Unix for Mac OS X Users",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/Mac-OS-X-10-6-tutorials/Unix-for-Mac-OS-X-Users/78546-2.html"
         },
         {
             "title" : "Flash CS4 Professional: Object-Oriented Programming",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2012",
+=======
+            "dates": 2012,
+>>>>>>> changes emmy project year
             "url": "http://www.lynda.com/ActionScript-3-tutorials/flash-cs4-professional-object-oriented-programming/759-2.html"
         },
         {
             "title" : "Flash Player 10 New Features",
             "school": "Lynda.com",
+<<<<<<< HEAD
             "dates": "2010",
             "url": "http://www.lynda.com/Flash-Player-10-tutorials/new-features/52767-2.html"
         }
@@ -263,6 +379,15 @@ var education = {
 
 
 };
+=======
+            "dates": 2010,
+            "url": "http://www.lynda.com/Flash-Player-10-tutorials/new-features/52767-2.html"
+        }
+
+    ]
+
+}
+>>>>>>> changes emmy project year
 
 var work = {
     "jobs" : [
@@ -270,13 +395,17 @@ var work = {
             "employer" : "Comcast",
             "title": "Front End Developer",
             "dates": "August 2015 - present",
+<<<<<<< HEAD
             "location": "Philadelphia, PA",
+=======
+>>>>>>> changes emmy project year
             "description":"Developing middleware/cms tool for editors as well and an interface for users in the xfinity.com consumer preferences portal."
         },
         {
             "employer" : "Time Inc",
             "title": "Front End Developer",
             "dates": "May 2015 - August 2015",
+<<<<<<< HEAD
             "location": "New York, NY",
             "description":"Developing and implement algorithms for maximizing ad display and share clicks for time.com and fortune.com"
         },
@@ -285,19 +414,32 @@ var work = {
             "title": "Front End Developer",
             "dates": "August 2014-May2015",
             "location": "New York, NY",
+=======
+            "description":"Developing and implement algorithms for maximizing ad display and share clicks for time.com and fortune.com"
+        },
+         {
+            "employer" : "Bursont-Marsteller/Proof Integrated Communications",
+            "title": "Front End Developer",
+            "dates": "August 2014-May2015",
+>>>>>>> changes emmy project year
             "description":"Online PR campaigns for the NFL, Friends of the Hebrew University and mobile implementation of bm.com"
         },
          {
             "employer" : "Shutterfly",
             "title": "Front End Developer",
+<<<<<<< HEAD
             "dates": "August 2014-May 2015",
             "location": "New York, NY",
+=======
+            "dates": "August 2014-May2015",
+>>>>>>> changes emmy project year
             "description":"Build an in browser word-processor which rendered to and svg element for a web-to-print application."
         },
         {
             "employer":"Showtime Networks",
             "title":"Front End Developer",
             "dates":"February 2009-May 2014",
+<<<<<<< HEAD
             "location": "New York, NY",
             "description":"Microsites for Dexter, The Big C and Weeds. Animated Emmy Campaign for Homeland. Engineering of showtimeanytime.com "
         }
@@ -326,10 +468,17 @@ var work = {
     }
 
 
+=======
+            "description":"Microsites for shows like Dexter, The Big C and Weeds. Animated Emmy Campaign for Homeland. Engineering of showtimeanytime.com "
+        }
+
+    ]
+>>>>>>> changes emmy project year
 }
 
 var projects = {
     "projects":[
+<<<<<<< HEAD
          {
             "title":"Showtime Emmy Campaign",
             "dates":"2010",
@@ -338,6 +487,8 @@ var projects = {
                 "http://andrewtdunn.com/_images/project_images/shoEmmy2012.jpg"
             ]
         },
+=======
+>>>>>>> changes emmy project year
         {
             "title":"Tube The Vote",
             "dates":"2008",
@@ -353,6 +504,7 @@ var projects = {
             "images":[
                 "http://andrewtdunn.com/_images/project_images/hrpt2.png"
             ]
+<<<<<<< HEAD
         }
     ],
 
@@ -483,3 +635,16 @@ d3.select("hr").transition()
     .delay(2000)
     .ease("linear")
     .style("width", "100%");
+=======
+        },
+        {
+            "title":"Showtime Emmy Campaign",
+            "dates":"2010",
+            "description":"Flash Animation of Showtime Emmy Campaign Ads.",
+            "images":[
+                "http://andrewtdunn.com/_images/project_images/shoEmmy2012.jpg"
+            ]
+        }
+    ]
+}
+>>>>>>> changes emmy project year

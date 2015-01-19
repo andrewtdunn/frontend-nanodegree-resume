@@ -109,8 +109,9 @@ function initializeMap() {
 
   var mapOptions = {
     disableDefaultUI: true,
-    draggable:false,
-    zoom:11
+    draggable: false,
+    scrollwheel: false,
+    disableDoubleClickZoom: true
   };
 
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to

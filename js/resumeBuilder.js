@@ -285,7 +285,7 @@ var work = {
             "logo":"comcast.jpeg"
         },
         {
-            "employer" : "Time Inc",
+            "employer" : "Time Inc.",
             "title": "Front End Developer",
             "dates": "May 2015 - August 2015",
             "location": "New York, NY",
@@ -512,3 +512,4 @@ d3.selectAll(".logoCover").transition()
     .ease("linear")
     .delay(function(d, i) { return 3600  +  (1000 - i * 200); })
     .style("opacity", ".7");
+

@@ -304,3 +304,8 @@ hr{
 .work-entry{
   padding-bottom:10px;
 }
+
+.work-entry{
+  position:relative;
+  padding-bottom:10px;
+}

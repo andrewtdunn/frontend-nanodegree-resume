@@ -305,7 +305,7 @@ var work = {
             "title": "Front End Developer",
             "dates": "May 2014-August 2014",
             "location": "New York, NY",
-            "description":"Build an in browser word-processor which rendered to and svg element for a web-to-print application.",
+            "description":"Build an in-browser word processor which rendered to an svg element for a web-to-print application.",
             "logo":"shutterfly.jpeg"
         },
         {

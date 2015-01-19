@@ -71,7 +71,8 @@ var education = {
             "degree":"Bachelor of Science",
             "majors":["Computer Science - Vision and Graphics"],
             "dates": "2008-2011",
-            "url": "http://columbia.edu"
+            "url": "http://columbia.edu",
+            "logo":"columbia.jpg"
         },
         {
             "name":"New York University",
@@ -79,7 +80,9 @@ var education = {
             "degree":"Professional Certificate",
             "majors":["Motion Graphics and Broadcast Design"],
             "dates": "2008-2011",
-            "url": "http://nyu.edu"
+            "url": "http://nyu.edu",
+            "logo":"nyu.jpg"
+
         },
         {
             "name":"Pratt Institute",
@@ -87,15 +90,17 @@ var education = {
             "degree":"Master of Fine Arts",
             "majors":["Drawing and Painting"],
             "dates": "2000-2002",
-            "url": "http://pratt.edu"
+            "url": "http://pratt.edu",
+            "logo":"pratt.jpg"
         },
         {
-            "name":"Lousiana State University",
+            "name":"Louisiana State University",
             "location":"Baton Rouge, LA",
-            "degree":"Bachelor of Arts/Bachelor of Fine Arts",
-            "majors":["English Literature", "Drawing and Painting"],
+            "degree":"Bachelor of Fine Arts",
+            "majors":["English Literature/Drawing and Painting"],
             "dates": "1995-1999",
-            "url": "http://lsu.edu"
+            "url": "http://lsu.edu",
+            "logo":"mike.jpg"
         },
         {
             "name":"Trinity University",
@@ -103,7 +108,8 @@ var education = {
             "degree":"N/A",
             "majors":["studies in pre-medicine"],
             "dates": "1993-1994",
-            "url": "http://trinity.edu"
+            "url": "http://trinity.edu",
+            "logo":"trinity.png"
         }
     ],
 
@@ -232,6 +238,8 @@ var education = {
             var newSchool = education.schools[school];
             $("#education").append(HTMLschoolStart);
 
+
+            var formattedSchoolImage = HTMLschoolImage.replace("%data%", newSchool.logo);
             var formattedSchoolName = HTMLschoolName.replace("%data%", newSchool.name);
             var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", newSchool.degree);
             var nameDegree = formattedSchoolName + formattedSchoolDegree;
@@ -242,10 +250,12 @@ var education = {
                 majors = majors + HTMLschoolMajor.replace("%data%", newSchool.majors[newMajor]);
             }
 
+            $(".education-entry:last").append(formattedSchoolImage);
             $(".education-entry:last").append(nameDegree);
             $(".education-entry:last").append(formattedSchoolLocation);
             $(".education-entry:last").append(formattedSchoolDates);
             $(".education-entry:last").append(majors);
+            $(".education-entry:last").append('<div class="clear"></div>');
         }
 
 
@@ -501,13 +511,13 @@ d3.select("hr").transition()
     .ease("linear")
     .style("width", "100%");
 
-d3.selectAll(".logo").transition()
+d3.selectAll(".work-entry .logo").transition()
     .duration(400)
     .ease("linear")
     .delay(function(d, i) { return 3600  +  (1000 - i * 200); })
     .style("opacity", "1");
 
-d3.selectAll(".logoCover").transition()
+d3.selectAll(".work-entry .logoCover").transition()
     .duration(400)
     .ease("linear")
     .delay(function(d, i) { return 3600  +  (1000 - i * 200); })

@@ -305,7 +305,22 @@ hr{
   padding-bottom:10px;
 }
 
-.work-entry{
-  position:relative;
-  padding-bottom:10px;
+.education-entry{
+  padding-bottom: 10px;
+}
+
+#onlineSection .education-entry{
+  padding-bottom: 0px;
+}
+
+
+
+.roundLogo{
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.roundLogoCover{
+  border-radius: 50%;
+  opacity: 0.7;
 }

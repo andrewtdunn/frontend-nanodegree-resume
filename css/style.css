@@ -269,3 +269,38 @@ h1, h2, h3, h4, h5 , .scifi{
 hr{
   width: 0%;
 }
+
+.logo{
+  float:left;
+  z-index: 1;
+  position:relative;
+  width:75px;
+  padding:0px;
+  margin-right: 10px;
+  opacity: 0;
+  border: 3px solid #666;
+  border-radius: 3px;
+}
+
+.logoCover{
+  float: left;
+  z-index: 2;
+  position:relative;
+  width: 75px;
+  height: 75px;
+  margin-left: -91px;
+  -webkit-box-shadow: inset 0px 0px 14px 8px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0px 0px 14px 8px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 0px 14px 8px rgba(0,0,0,0.5);
+  border: 3px solid #666;
+  border-radius: 3px;
+  opacity:0;
+}
+
+.clear{
+  clear:both;
+}
+
+.work-entry{
+  padding-bottom:10px;
+}

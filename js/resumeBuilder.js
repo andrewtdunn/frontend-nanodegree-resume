@@ -82,7 +82,7 @@ var education = {
             "url": "http://nyu.edu"
         },
         {
-            "name":"Pratt Institue",
+            "name":"Pratt Institute",
             "location":"Brooklyn, NY",
             "degree":"Master of Fine Arts",
             "majors":["Drawing and Painting"],
@@ -281,35 +281,40 @@ var work = {
             "title": "Front End Developer",
             "dates": "August 2015 - present",
             "location": "Philadelphia, PA",
-            "description":"Developing middleware/cms tool for editors as well and an interface for users in the xfinity.com consumer preferences portal."
+            "description":"Developing middleware/cms tool for editors as well and an interface for users in the xfinity.com consumer preferences portal.",
+            "logo":"comcast.jpeg"
         },
         {
             "employer" : "Time Inc",
             "title": "Front End Developer",
             "dates": "May 2015 - August 2015",
             "location": "New York, NY",
-            "description":"Developing and implement algorithms for maximizing ad display and share clicks for time.com and fortune.com"
+            "description":"Developing and implement algorithms for maximizing ad display and share clicks for time.com and fortune.com",
+            "logo":"timeinc.png"
         },
          {
             "employer" : "Burson-Marsteller/Proof Integrated Communications",
             "title": "Front End Developer",
             "dates": "August 2014-May2015",
             "location": "New York, NY",
-            "description":"Online PR campaigns for the NFL, Friends of the Hebrew University and mobile implementation of bm.com"
+            "description":"Online PR campaigns for the NFL, Friends of the Hebrew University and mobile implementation of bm.com",
+            "logo":"bm.jpg"
         },
          {
             "employer" : "Shutterfly",
             "title": "Front End Developer",
             "dates": "May 2014-August 2014",
             "location": "New York, NY",
-            "description":"Build an in browser word-processor which rendered to and svg element for a web-to-print application."
+            "description":"Build an in browser word-processor which rendered to and svg element for a web-to-print application.",
+            "logo":"shutterfly.jpeg"
         },
         {
             "employer":"Showtime Networks",
             "title":"Front End Developer",
             "dates":"February 2009-May 2014",
             "location": "New York, NY",
-            "description":"Microsites for Dexter, The Big C and Weeds. Animated Emmy Campaign for Homeland. Engineering of showtimeanytime.com "
+            "description":"Microsites for Dexter, The Big C and Weeds. Animated Emmy Campaign for Homeland. Engineering of showtimeanytime.com ",
+            "logo":"sho3.jpg"
         }
 
     ],
@@ -326,11 +331,14 @@ var work = {
             var formattedWorkDates  = HTMLworkDates.replace("%data%", newJob.dates);
             var formattedWorkLocation = HTMLworkLocation.replace("%data%", newJob.location);
             var formattedWorkDescription = HTMLworkDescription.replace("%data%", newJob.description);
+            var formattedWorkImage = HTMLworkImage.replace("%data%", newJob.logo);
 
+            $(".work-entry:last").append(formattedWorkImage);
             $(".work-entry:last").append(formattedEmployerTitle);
             $(".work-entry:last").append(formattedWorkLocation);
             $(".work-entry:last").append(formattedWorkDates);
             $(".work-entry:last").append(formattedWorkDescription);
+            $(".work-entry:last").append('<div class="clear"></div>');
         }
 
     }
@@ -492,3 +500,15 @@ d3.select("hr").transition()
     .delay(2000)
     .ease("linear")
     .style("width", "100%");
+
+d3.selectAll(".logo").transition()
+    .duration(400)
+    .ease("linear")
+    .delay(function(d, i) { return 3600  +  (1000 - i * 200); })
+    .style("opacity", "1");
+
+d3.selectAll(".logoCover").transition()
+    .duration(400)
+    .ease("linear")
+    .delay(function(d, i) { return 3600  +  (1000 - i * 200); })
+    .style("opacity", ".7");

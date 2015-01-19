@@ -1,4 +1,4 @@
-var skills = ["javascript","c++","algorithms","graphics","html5","ActionScript","PHP","User Experience","Augmented reality","Python","jQuery","CSS3","computer vision" ,"3d Modeling"];
+var skills = ["javascript","c++","algorithms","graphics","html5","ActionScript","PHP","User Experience","Augmented reality","Python","Motion Graphics","jQuery","CSS3","computer vision" ,"3d Modeling"];
 
 var contacts = {
     "twitter": "@andrewtdunn",
@@ -61,6 +61,7 @@ var bio = {
     }
 };
 
+
 var education = {
 
     "schools": [
@@ -71,6 +72,14 @@ var education = {
             "majors":["Computer Science - Vision and Graphics"],
             "dates": "2008-2011",
             "url": "http://columbia.edu"
+        },
+        {
+            "name":"New York University",
+            "location":"New York City, NY",
+            "degree":"Professional Certificate",
+            "majors":["Motion Graphics and Broadcast Design"],
+            "dates": "2008-2011",
+            "url": "http://nyu.edu"
         },
         {
             "name":"Pratt Institue",
@@ -264,6 +273,7 @@ var education = {
 
 };
 
+
 var work = {
     "jobs" : [
         {
@@ -290,7 +300,7 @@ var work = {
          {
             "employer" : "Shutterfly",
             "title": "Front End Developer",
-            "dates": "August 2014-May 2015",
+            "dates": "May 2014-August 2014",
             "location": "New York, NY",
             "description":"Build an in browser word-processor which rendered to and svg element for a web-to-print application."
         },
@@ -324,7 +334,6 @@ var work = {
         }
 
     }
-
 
 }
 

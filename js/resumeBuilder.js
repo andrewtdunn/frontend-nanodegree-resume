@@ -1,4 +1,4 @@
-var skills = ["javascript","c++","algorithms","graphics","html5","ActionScript","PHP","User Experience","Augmented reality","Python","Motion Graphics","jQuery","CSS3","computer vision" ,"3d Modeling"];
+var skills = ["javascript","c++","algorithms","graphics","html5","ActionScript","PHP","User Experience","Augmented reality","Python","Motion Graphics","jQuery","CSS3","computer vision" ,"3d Modeling", "CRM"];
 
 var contacts = {
     "twitter": "@andrewtdunn",
@@ -72,7 +72,8 @@ var education = {
             "majors":["Computer Science - Vision and Graphics"],
             "dates": "2008-2011",
             "url": "http://columbia.edu",
-            "logo":"columbia.jpg"
+            "logo":"columbia.jpg",
+
         },
         {
             "name":"New York University",
@@ -105,8 +106,8 @@ var education = {
         {
             "name":"Trinity University",
             "location":"San Antonio, TX",
-            "degree":"N/A",
-            "majors":["studies in pre-medicine"],
+            "degree":"none",
+            "majors":["Studies in pre-medicine"],
             "dates": "1993-1994",
             "url": "http://trinity.edu",
             "logo":"trinity.png"
@@ -250,6 +251,11 @@ var education = {
                 majors = majors + HTMLschoolMajor.replace("%data%", newSchool.majors[newMajor]);
             }
 
+            if (newSchool.degree === "none"){
+                nameDegree = nameDegree.substring(0,nameDegree.indexOf(" -"));
+                majors = majors.replace("Major: ", "");
+            }
+
             $(".education-entry:last").append(formattedSchoolImage);
             $(".education-entry:last").append(nameDegree);
             $(".education-entry:last").append(formattedSchoolLocation);
@@ -291,7 +297,7 @@ var work = {
             "title": "Front End Developer",
             "dates": "August 2015 - present",
             "location": "Philadelphia, PA",
-            "description":"Developing middleware/cms tool for editors as well and an interface for users in the xfinity.com consumer preferences portal.",
+            "description":"Developing middleware/cms tool for editors and an interface for users in the xfinity.com consumer preferences portal",
             "logo":"comcast.jpeg"
         },
         {
@@ -315,7 +321,7 @@ var work = {
             "title": "Front End Developer",
             "dates": "May 2014-August 2014",
             "location": "New York, NY",
-            "description":"Build an in-browser word processor which rendered to an svg element for a web-to-print application.",
+            "description":"Build an in-browser word processor which rendered to an svg element for a web-to-print application",
             "logo":"shutterfly.jpeg"
         },
         {
@@ -325,6 +331,14 @@ var work = {
             "location": "New York, NY",
             "description":"Microsites for Dexter, The Big C and Weeds. Animated Emmy Campaign for Homeland. Engineering of showtimeanytime.com ",
             "logo":"sho3.jpg"
+        },
+        {
+            "employer":"Hudson River Park Trust",
+            "title":"Assistant to Creative Director",
+            "dates":"February 2006-August 2008",
+            "location": "New York, NY",
+            "description":"Site relaunch and poster design",
+            "logo":"hrpt.jpg"
         }
 
     ],

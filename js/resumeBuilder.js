@@ -364,10 +364,9 @@ var work = {
             $(".work-entry:last").append(formattedWorkDescription);
             $(".work-entry:last").append('<div class="clear"></div>');
         }
-
     }
 
-}
+};
 
 var projects = {
     "projects":[

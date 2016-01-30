@@ -126,6 +126,7 @@ function initializeMap() {
   */
   function locationFinder() {
 
+
     // initializes an empty array
     var locations = [];
 
